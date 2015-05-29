@@ -7,8 +7,8 @@ setup(
     author = 'TWT Web Devs',
     author_email = 'webdev@washingtontimes.com',
     url = 'http://github.com/washingtontimes/django-news-sitemaps/',
-    include_package_data = True,
-    packages = find_packages(),
+    package_data = {'': ['templates/**/*']},
+    packages = find_packages(exclude=('example',)),
     classifiers = [
         'Development Status :: 4 - Beta',
         'Environment :: Web Environment',
